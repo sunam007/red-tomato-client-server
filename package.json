@@ -1,0 +1,18 @@
+{
+  "name": "red-tomato",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd Red-tomato-server && npm run start-dev",
+    "client": "cd red-tomato-client && yarn start",
+    "dev": "concurrently -n 'server,client' \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
